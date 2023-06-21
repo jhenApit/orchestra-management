@@ -1,0 +1,50 @@
+version: "3.8"
+services:
+  sqlserver:
+    build: 
+      context: ./backend/Orchestra/OrchestraDb
+      dockerfile: Dockerfile
+    image: orchestr-o-matic
+    container_name: orchestr-o-matic-db
+    ports:
+      - 1433:1433
+    env_file:
+      - ./env/sqlserver.env
+    networks:
+      - orchestr-o-matic-network
+
+  backend:
+    build: 
+      context: ./backend/Orchestra/OrchestraAPI
+      dockerfile: Dockerfile
+    image: orchestr-o-matic-api
+    container_name: orchestr-o-matic-api
+    ports:
+      - 7077:5000
+    env_file:
+      - ./env/backend.env
+    depends_on:
+      - sqlserver
+    networks:
+      - orchestr-o-matic-network
+
+  frontend:
+    build:
+      context: ./frontend/orchestr-o-matic
+      dockerfile: Dockerfile
+    image: web-app
+    container_name: orchestr-o-matic-app
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend/orchestr-o-matic/src:/app/src
+    depends_on:
+      - backend
+    environment:
+      - WATCHPACK_POLLING=true
+    networks:
+      - orchestr-o-matic-network
+    
+networks:
+  orchestr-o-matic-network:
+    driver: bridge
