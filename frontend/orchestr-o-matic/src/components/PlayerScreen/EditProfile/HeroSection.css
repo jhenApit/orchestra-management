@@ -1,0 +1,111 @@
+.profile-img-icon1 {
+  position: relative;
+  border-radius: var(--br-4981xl);
+  width: 323px;
+  height: 323px;
+  object-fit: cover;
+}
+.name2 {
+  position: relative;
+  line-height: 80.5%;
+  display: flex;
+  align-items: center;
+  width: 485px;
+  height: 67px;
+  flex-shrink: 0;
+}
+.account-type1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 167.02%;
+}
+.account-detail {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.edit-profile1 {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 220.52%;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-seashell);
+  text-align: center;
+}
+.edit-button,
+.hero-right-contents {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.edit-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl);
+  background-color: var(--color-darksalmon);
+  border-radius: var(--br-3xs);
+  flex-direction: row;
+}
+.hero-right-contents {
+  flex: 1;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-antiquewhite-100);
+  flex-direction: column;
+  padding: var(--padding-11xl) var(--padding-30xl);
+  gap: var(--gap-12xl);
+}
+.hero-contents,
+.hero-section1 {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.hero-contents {
+  border-radius: var(--br-31xl);
+  background-color: var(--color-antiquewhite-200);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-51xl);
+}
+.hero-section1 {
+  flex-direction: column;
+  padding: var(--padding-11xl) var(--padding-61xl);
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto-serif);
+}
+@media screen and (max-width: 960px) {
+  .account-type1,
+  .name2 {
+    text-align: center;
+  }
+  .account-detail {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .hero-contents,
+  .hero-right-contents {
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .hero-right-contents {
+    gap: var(--gap-6xl);
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    flex: unset;
+    align-self: stretch;
+  }
+  .hero-contents {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+}

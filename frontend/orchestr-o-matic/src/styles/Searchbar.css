@@ -1,0 +1,35 @@
+.orchestra-input-wrapper {
+  background-color: white;
+  width: 500px;
+  height: 45px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+  padding-left: 15px;
+}
+
+.concert-input-wrapper {
+  background-color: white;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 35px 20px 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 14px;
+  width: 80%;
+  margin-left: 25px;
+}
+
+input:focus {
+  outline: none;
+}

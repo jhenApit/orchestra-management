@@ -1,0 +1,121 @@
+.search-bar1 {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+}
+.orchestra-img-icon4 {
+  flex: 1;
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.orchestra-id6,
+.orchestra-img-icon4,
+.orchestra-name8 {
+  align-self: stretch;
+  position: relative;
+}
+.orchestra-id6 {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.orchestra-name8 {
+  font-size: var(--font-size-mini);
+  font-family: var(--font-roboto-serif);
+  color: var(--color-black);
+}
+.orchestra-id-parent4 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+.orchestra-details-inner6 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.orchestra-details8,
+.rec-card-13 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.orchestra-details8 {
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-white);
+  padding: var(--padding-xl) var(--padding-base);
+  justify-content: center;
+}
+.rec-card-13 {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-whitesmoke-100);
+  justify-content: flex-start;
+}
+.orchestra-img-icon5 {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 242px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.orchestra-details9 {
+  align-self: stretch;
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl) var(--padding-base);
+  align-items: center;
+  justify-content: center;
+}
+.orchestra1,
+.rec-card-23 {
+  align-self: stretch;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rec-card-23 {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: column;
+}
+.orchestra1 {
+  display: grid;
+  flex-direction: row;
+  gap: var(--gap-xl);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.cardwrapper3,
+.content-section1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-section1 {
+  padding: var(--padding-24xl) var(--padding-43xl) var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-roboto);
+}

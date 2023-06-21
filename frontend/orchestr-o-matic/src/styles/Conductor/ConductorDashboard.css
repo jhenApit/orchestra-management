@@ -1,0 +1,109 @@
+.dashboard {
+  max-width: 100%;
+  margin: 0 auto;
+
+  .dashboard-header,
+  .orchestra-header,
+  .concert-header {
+    display: flex;
+    height: 12vh;
+    align-items: left;
+    justify-content: left;
+    font-size: 2rem;
+    margin: 0px 35px 0px 35px;
+    padding-top: 25px;
+  }
+
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(41, 24, 15, 0.15);
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .dashboard-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 35px 30px 35px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(41, 24, 15, 0.15);
+  }
+
+  .vr {
+    width: 1px;
+    height: 100px;
+    border-right: 2px solid rgba(41, 24, 15, 0.15);
+  }
+
+  .numbers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .numbers-container > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .numbers-container > div > span {
+    font-size: 50px;
+    margin-left: 10px;
+  }
+
+  .dashboard-concerts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 35px;
+  }
+
+  .dashboard-recent-performances {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+  }
+
+  .dashboard-performance-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(41, 24, 15, 0.3);
+  }
+
+  .dashboard-concert-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .dashboard-concert-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .dashboard-concert-date {
+    font-size: 14px;
+  }
+
+  .dashboard-concert-description {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .dashboard-recent-performances > div:nth-of-type(odd) {
+    background-color: #f0dacd;
+  }
+}

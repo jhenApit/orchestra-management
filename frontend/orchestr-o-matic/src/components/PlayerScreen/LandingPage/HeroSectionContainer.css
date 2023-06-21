@@ -1,0 +1,107 @@
+.hero-image-icon,
+.hero-mask {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  border-radius: var(--br-3xs);
+}
+.hero-image-icon {
+  height: calc(100% - 0.73px);
+  width: calc(100% + 4.96px);
+  right: -5.96px;
+  bottom: 0.73px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.hero-mask {
+  height: 100%;
+  width: 100%;
+  right: -1px;
+  bottom: 0;
+  background-color: var(--color-gray-800);
+}
+.hero-image {
+  flex: 1;
+  position: relative;
+  height: 593.73px;
+}
+.content-subtitle {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.25px;
+  text-transform: capitalize;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+.orchestra{
+  color: var(--color-burlywood-100);;
+  font-size: larger;
+}
+
+.an, .manager{
+  font-size: larger;
+}
+.span {
+  color: var(--color-white);
+}
+.content-maintitle {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-31xl);
+  letter-spacing: -0.25px;
+  color: var(--color-black);
+}
+.content-title,
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content-title {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-11xs);
+}
+.hero-content {
+  flex: 1;
+  align-items: center;
+}
+.hero-section-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-23xl);
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-roboto-serif);
+  padding-top: 40px;
+}
+@media screen and (max-width: 960px) {
+  .hero-image {
+    display: none;
+  }
+  .content-maintitle {
+    font-size: var(--font-size-27xl);
+  }
+  .hero-content {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .content-subtitle {
+    font-size: var(--font-size-lg);
+  }
+  .content-maintitle {
+    font-size: var(--font-size-13xl);
+  }
+  .hero-content {
+    width: 100% !important;
+    padding: 24px !important;
+  }
+}

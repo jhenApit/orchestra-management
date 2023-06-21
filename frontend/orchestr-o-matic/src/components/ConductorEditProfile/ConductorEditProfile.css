@@ -1,0 +1,104 @@
+.edit-profile-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .edit-profile-popup-inner {
+    position: relative;
+    padding: 32px;
+    width: 500px;
+    height: 500px;
+    background-color: #f0dacd;
+    box-shadow: 0px 0px 6px #000;
+    border-radius: 10px;
+    border-top: 10px solid rgba(41, 24, 15);
+  }
+
+  .edit-profile-popup-inner .profile-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .profile-close-btn {
+    padding-top: 17px;
+    padding-right: 10px;
+  }
+
+  .edit-profile-popup-header {
+    border-bottom: 2px solid rgba(41, 24, 15, 0.15);
+    padding-bottom: 15px;
+    color: #29180f;
+  }
+
+  .edit-profile-popup-infos {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+
+  .edit-profile-popup-infos form {
+    display: flex;
+  }
+
+  .edit-profile-popup-infos label {
+    display: block;
+    margin-bottom: 5px;
+    color: #29180f;
+    padding-bottom: 5px;
+  }
+
+  .edit-profile-popup-infos input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(41, 24, 15, 0.3);
+    border-radius: 4px;
+  }
+
+  .name-input-wrapper,
+  .email-input-wrapper,
+  .password-input-wrapper {
+    background-color: white;
+    height: 35px;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 25px 0px;
+    border: 1px solid rgba(41, 24, 15, 0.3);
+  }
+
+  .profile-save-btn,
+  .profile-cancel-btn {
+    width: 115px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid rgba(41, 24, 15, 0.5);
+  }
+
+  .profile-cancel-btn:hover,
+  .profile-save-btn:hover {
+    opacity: 0.8;
+  }
+
+  .profile-save-btn {
+    background-color: #29180f;
+    color: #f0dacd;
+  }
+
+  .profile-cancel-btn {
+    background-color: transparent;
+    margin-right: 20px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}

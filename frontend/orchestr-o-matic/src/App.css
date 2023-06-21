@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #f7f2ec !important;
+}

@@ -1,0 +1,133 @@
+.assigning-musicians,
+.to-concert-sections {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.25px;
+}
+.assigning-musicians {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.to-concert-sections {
+  font-size: var(--font-size-26xl);
+  line-height: 52px;
+  font-weight: 800;
+}
+.concert-section-header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.image-holder,
+.ppo-concert-icon {
+  flex: 1;
+  border-radius: var(--br-21xl);
+}
+.ppo-concert-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.image-holder {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-seashell);
+  flex-direction: column;
+}
+.card-frame-1,
+.image-holder,
+.image-holder1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.card-frame-1 {
+  width: 25%;
+  flex-direction: row;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+}
+.image-holder1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex: 1;
+  border-radius: var(--br-9xs);
+  flex-direction: column;
+}
+.card-frame-2,
+.card-frame-4 {
+  width: 25%;
+  flex-direction: row;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+}
+.card-frame-2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.card-frame-4 {
+  height: 418px;
+}
+.card-frame-4,
+.concert-cards-column,
+.concert-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.concert-cards-column {
+  align-self: stretch;
+  flex-direction: row;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.concert-section {
+  border-radius: var(--br-21xl);
+  background-color: var(--color-antiquewhite-100);
+  width: 100% !important;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-41xl);
+  max-width: 1324px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: var(--font-size-7xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-roboto-serif);
+}
+@media screen and (max-width: 420px) {
+  .assigning-musicians {
+    font-size: var(--font-size-lg);
+    margin-bottom: 12px !important;
+  }
+  .to-concert-sections {
+    font-size: var(--font-size-11xl);
+    line-height: 1rem;
+  }
+  .image-holder {
+    flex: unset;
+    align-self: stretch;
+  }
+  .card-frame-1 {
+    flex-direction: column;
+  }
+  .card-frame-1,
+  .card-frame-2,
+  .card-frame-4 {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,199 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.profile-img-icon {
+  position: relative;
+  border-radius: var(--br-4981xl);
+  width: 181px;
+  height: 181px;
+  object-fit: cover;
+}
+.profile-pic-frame,
+.profile-picture {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.profile-pic-frame {
+  border-radius: var(--br-481xl);
+  background-color: var(--color-white);
+}
+.profile-picture {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 109.5px);
+  border-radius: 700px;
+  padding: 0 19px;
+}
+.player-name {
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+  width: 219px;
+}
+.account-type {
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 18px;
+  color: var(--color-black);
+  text-align: left;
+}
+.player-detail {
+  position: absolute;
+  top: 196px;
+  left: calc(50% - 109.5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.profile {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--font-roboto-serif);
+  color: var(--color-antiquewhite-100);
+  text-align: left;
+}
+.profile-item {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) 0 var(--padding-3xs) var(--padding-6xs);
+  background-color: transparent;
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-3xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.profile-item:active,
+.profile-item:hover {
+  background-color: var(--color-gray-100);
+  padding-top: var(--padding-xl);
+  padding-bottom: var(--padding-xl);
+  box-sizing: border-box;
+}
+.profile-item:active {
+  padding-top: var(--padding-3xs);
+  padding-bottom: var(--padding-3xs);
+}
+.dashboard-queue-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.dashboard-item {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) 0 var(--padding-3xs) var(--padding-6xs);
+  background-color: transparent;
+  border-radius: var(--br-3xs);
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+}
+.dashboard-item:hover {
+  padding-top: var(--padding-xl);
+  padding-bottom: var(--padding-xl);
+  box-sizing: border-box;
+}
+.dashboard-item,
+.drawer-menu-items,
+.orchestra-item {
+  width: 239px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.orchestra-item {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl) var(--padding-6xs);
+  background-color: transparent;
+  border-radius: var(--br-3xs);
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+}
+.dashboard-item:hover,
+.orchestra-item:hover {
+  background-color: var(--color-gray-100);
+}
+.drawer-menu-items {
+  position: absolute;
+  top: 274px;
+  left: 0;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+.menu {
+  align-self: stretch;
+  position: relative;
+  height: 894px;
+}
+.logout-icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.logout {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+  color: #f0dacd;
+}
+.logout-item {
+  width: 94px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.drawer-menu {
+  position: relative;
+  background-color: var(--color-darksalmon);
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: space-between;
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-400);
+  font-family: var(--font-roboto-serif);
+}
+.drawer-menu.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}

@@ -1,0 +1,125 @@
+.ranking {
+  padding: 2rem;
+  background-image: url("../../images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .back-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #fff;
+
+    &:hover {
+      color: #bf8c70c4;
+    }
+  }
+
+  .form-group {
+    text-align: center;
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+
+    .player-cards {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+
+      .player-card {
+        background-color: #bf8b70;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+          margin-left: 0;
+          margin-right: 0;
+          color: #fff;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+          font-size: 16px;
+          color: #fff;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+  // Responsive Styles
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .form-group {
+      h1 {
+        font-size: 24px;
+      }
+
+      .player-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        .player-card {
+          padding: 15px;
+
+          h3 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .form-group {
+      h1 {
+        font-size: 20px;
+      }
+
+      .player-cards {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+        .player-card {
+          padding: 12px;
+
+          h3 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ranking {
+        background-size: contain;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ranking {
+        background-size: cover;
+      }
+    }
+  }
+}

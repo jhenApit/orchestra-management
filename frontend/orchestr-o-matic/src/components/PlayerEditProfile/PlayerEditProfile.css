@@ -1,0 +1,18 @@
+.edit-profile,
+.main-wrapper {
+  background-color: var(--color-seashell);
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper {
+  align-self: stretch;
+  padding: 57px 0 61px;
+  align-items: center;
+  justify-content: center;
+}
+.edit-profile {
+  position: relative;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

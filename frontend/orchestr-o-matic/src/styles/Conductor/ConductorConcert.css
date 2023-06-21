@@ -1,0 +1,114 @@
+.concert {
+  .concert-input-wrapper {
+    height: 70px;
+    justify-content: flex-end;
+  }
+
+  .concert-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  #search-icon {
+    color: #29180f;
+  }
+
+  .concert-header #concert-title {
+    display: flex;
+    font-size: 2rem;
+    margin: 0px 35px 0px 35px;
+    font-weight: normal;
+  }
+
+  .add-concert-btn {
+    width: 170px;
+    height: 35px;
+    background-color: #29180f;
+    color: #f0dacd;
+    border-radius: 5px;
+    float: right;
+  }
+
+  .add-concert-btn:hover {
+    opacity: 0.8;
+  }
+
+  .concert-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1.5rem;
+    min-height: 600px;
+  }
+
+  .concert-table {
+    border-spacing: 0px 10px;
+    width: 100%;
+  }
+
+  .concert-table td {
+    text-align: left;
+    padding: 8px;
+    border-top: 1px solid rgba(41, 24, 15, 0.3);
+    border-bottom: 1px solid rgba(41, 24, 15, 0.3);
+  }
+
+  .concert-table .concert-id {
+    border-left: 1px solid rgba(41, 24, 15, 0.3);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 15px;
+  }
+
+  .concert-table .concert-actions {
+    border-right: 1px solid rgba(41, 24, 15, 0.3);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 15px;
+  }
+
+  .concert-table th {
+    text-align: left;
+    padding: 8px;
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+
+  .concert-table tbody tr:nth-of-type(odd) {
+    background-color: #f0dacd;
+  }
+
+  .actions {
+    float: right;
+  }
+
+  .actions svg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .pagination span {
+    color: #bf8b70;
+    font-size: 18px;
+    cursor: pointer;
+    background: white;
+    padding: 5px 7px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #00000030;
+  }
+
+  .pagination span.page-active {
+    color: #29180f;
+    text-decoration: underline;
+  }
+}

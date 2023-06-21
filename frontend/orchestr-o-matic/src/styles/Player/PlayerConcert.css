@@ -1,0 +1,36 @@
+.search-bar {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+}
+
+.content-section {
+  align-self: stretch;
+  padding: var(--padding-24xl) var(--padding-43xl) var(--padding-3xs);
+  align-items: flex-start;
+  gap: var(--gap-29xl);
+}
+
+.content-section,
+.list-of-courses,
+.my-concerts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.list-of-courses {
+  align-self: stretch;
+  height: 699px;
+  padding: 0 0 var(--padding-69xl);
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.my-concerts {
+  position: relative;
+  background-color: var(--color-seashell);
+  width: 100%;
+  align-items: flex-start;
+  gap: var(--gap-10xs);
+}

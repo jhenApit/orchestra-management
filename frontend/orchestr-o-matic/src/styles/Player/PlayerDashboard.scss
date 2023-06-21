@@ -1,0 +1,176 @@
+.player-dashboard {
+  display: flex;
+  height: 100%;
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    transition: transform 0.3s ease;
+
+    &.navbar-open {
+      transform: translateX(300px);
+    }
+
+    .info-card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: #bf8b70;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      color: #fff;
+      margin-bottom: 20px;
+
+      .info-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        h3 {
+          font-size: 2rem;
+          color: #fff;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+          border: none;
+          padding: 0;
+          background-color: #bf8b70;
+          color: #fff;
+        }
+      }
+
+      .info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+
+        .card {
+          background-color: #e6c5b3a6;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
+            transform: translateY(-5px);
+          }
+
+          p {
+            font-size: 16px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+
+    .orchestra-card {
+      display: flex;
+      flex-direction: column;
+      background-color: #bf8b70;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      color: #fff;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+
+      .orchestra-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        h3 {
+          font-size: 2rem;
+          color: #fff;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+          padding: 20px;
+        }
+
+        button {
+          border: none;
+          padding: 0;
+          background-color: #bf8b70;
+          color: #fff;
+          padding: 20px;
+        }
+      }
+
+      .orchestras {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        justify-items: center;
+
+        .orchestra {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #e6c5b3a6;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease-in-out;
+          flex: 1;
+          min-width: 250px;
+
+          &:hover {
+            transform: translateY(-5px);
+          }
+
+          .orchestra-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 10px;
+          }
+
+          img {
+            height: 200px;
+            width: 300px;
+          }
+
+          .orchestra-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+              font-size: 16px;
+              color: #000;
+              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            h5 {
+              font-size: 12px;
+              color: #000;
+              font-weight: lighter;
+              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+              margin-bottom: 10px;
+            }
+
+            h3 {
+              font-size: 16px;
+              color: #000;
+              font-weight: normal;
+              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+              margin-bottom: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

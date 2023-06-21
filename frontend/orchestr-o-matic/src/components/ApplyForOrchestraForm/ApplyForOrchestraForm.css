@@ -1,0 +1,188 @@
+.orchestra-img-icon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.orchestra-image-container {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-31xl);
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.est-date,
+.main-title {
+  align-self: stretch;
+  position: relative;
+}
+.est-date {
+  font-size: var(--font-size-base);
+}
+.header,
+.header-subtitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.header-subtitle {
+  text-align: left;
+  font-size: var(--font-size-base);
+}
+.section-input {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+}
+.form-fields1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-14xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.button4 {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--font-roboto-serif);
+  color: var(--color-white);
+  text-align: left;
+}
+.apply-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-xl);
+  background-color: var(--color-darksalmon);
+  position: absolute;
+  top: 0;
+  left: 133px;
+  border-radius: var(--br-52xl);
+  width: 139px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.button5 {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--font-roboto-serif);
+  color: var(--color-darksalmon);
+  text-align: left;
+}
+.cancel-button {
+  cursor: pointer;
+  border: 2px solid var(--color-darksalmon);
+  padding: var(--padding-5xs) var(--padding-xl);
+  background-color: var(--color-gray-700);
+  position: absolute;
+  top: 1px;
+  left: 281px;
+  border-radius: var(--br-52xl);
+  box-sizing: border-box;
+  width: 135px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buttons1 {
+  align-self: stretch;
+  position: relative;
+  height: 37px;
+}
+.form-contents {
+  align-self: stretch;
+  border-radius: var(--br-21xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 27px;
+}
+.form-card,
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  align-self: stretch;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-antiquewhite-100);
+  padding: 0 var(--padding-11xl);
+  align-items: center;
+  justify-content: center;
+}
+.form-card {
+  height: 580px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.apply-for-orchestra-form,
+.cards-container {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: flex-start;
+}
+.cards-container {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  padding: var(--padding-41xl) 48px;
+  justify-content: center;
+  gap: var(--gap-xl);
+}
+.apply-for-orchestra-form {
+  position: relative;
+  width: 100%;
+  height: 809px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-roboto-serif);
+}
+@media screen and (max-width: 1200px) {
+  .orchestra-image-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .orchestra-image-container {
+    flex: unset;
+    align-self: stretch;
+  }
+  .form-container {
+    flex-direction: column;
+  }
+  .form-card {
+    flex: unset;
+    align-self: stretch;
+  }
+  .cards-container {
+    flex-direction: column;
+  }
+}

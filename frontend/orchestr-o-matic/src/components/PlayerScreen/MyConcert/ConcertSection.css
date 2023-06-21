@@ -1,0 +1,84 @@
+.concert-header {
+  position: relative;
+  line-height: 83%;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.concert-img-icon3,
+.concert-name3 {
+  align-self: stretch;
+  position: relative;
+}
+.concert-img-icon3 {
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 242px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.concert-name3 {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.concert-name-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.concert-details-inner2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.concert-1,
+.concert-details3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.concert-details3 {
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-seashell);
+  padding: var(--padding-xl) var(--padding-base);
+  justify-content: center;
+}
+.concert-1 {
+  text-decoration: none;
+  flex: 1;
+  border-radius: var(--br-3xs);
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-whitesmoke-100);
+  justify-content: flex-start;
+  cursor: pointer;
+  color: inherit;
+}
+.concert-section1,
+.concerts-container {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.concerts-container {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.concert-section1 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xs) var(--padding-63xl) 0;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-roboto-serif);
+}

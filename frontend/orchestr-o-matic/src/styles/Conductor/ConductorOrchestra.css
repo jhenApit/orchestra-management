@@ -1,0 +1,61 @@
+.orchestra {
+  .orchestra-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+    color: #29180f !important;
+  }
+
+  #search-icon {
+    color: #29180f;
+  }
+
+  .orchestra-contents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 70px 0px 70px;
+    margin-left: 20px;
+  }
+
+  .orchestra-content {
+    width: 420px;
+    height: 250px;
+    background-color: #f0dacd;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    padding: 25px;
+    color: #29180f;
+  }
+
+  .content-description {
+    text-align: justify;
+  }
+
+  .add-orchestra-btn {
+    width: 170px;
+    height: 45px;
+    background-color: #29180f;
+    color: #f0dacd;
+    border-radius: 5px;
+  }
+
+  .add-orchestra-btn:hover {
+    opacity: 0.8;
+  }
+
+  .actions {
+    float: right;
+  }
+
+  .actions svg {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
